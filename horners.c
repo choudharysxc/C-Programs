@@ -5,14 +5,12 @@
 int horners(int[],int,int);
 
 int main(){
-
 int arr_ele,pol_val;
 int arr[Max_value];
 
-
 printf("enter number of array elements required\n");
 scanf("%d",&arr_ele);
-
+	
 if(Max_value<arr_ele || arr_ele<1){
 	printf("enter new limit\n");
 	exit(EXIT_FAILURE);
@@ -30,9 +28,7 @@ printf("the random values are : \n");
 for(int i=0;i<arr_ele;i++){		
 	printf("%d \n",arr[i]);
 }
-
 printf("The value of the equation is : %d",horners(arr,arr_ele,pol_val));
-
 }
 
 int horners(int arr[],int arr_ele,int pol_val){
